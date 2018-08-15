@@ -22,6 +22,7 @@ attr_accessor :id, :name, :grade
     SQL
 
     DB[:conn].execute(sql)
+  end
 
   end
 
