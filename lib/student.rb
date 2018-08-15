@@ -58,11 +58,11 @@ attr_accessor :id, :name, :grade
   end
 
   def self.new_from_db
-    new_student = self.new  
+    new_student = self.new
   new_student.id = row[0]
-  new_song.name =  row[1]
-  new_song.length = row[2]
-  new_song 
+  new_student.name =  row[1]
+  new_student.length = row[2]
+  new_student
   end
 
   def update
