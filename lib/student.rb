@@ -54,7 +54,7 @@ attr_accessor :id, :name, :grade
   def self.create(name:, grade:)
     student = Student.new(name, grade)
     student.save
-    song
+    student
   end
 
   def update
