@@ -51,7 +51,7 @@ attr_accessor :id, :name, :grade
     Student.new(result[0], result[1], result[2])
   end
 
-  def self.create(name:, grade:)
+  def self.create(name, grade)
     student = Student.new(name, grade)
     student.save
     student
