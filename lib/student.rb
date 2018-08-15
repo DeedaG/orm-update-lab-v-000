@@ -51,6 +51,8 @@ attr_accessor :id, :name, :grade
     Student.new(result[0], result[1], result[2])
   end
 
+  def self.create 
+  end 
 
   def update
     sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
