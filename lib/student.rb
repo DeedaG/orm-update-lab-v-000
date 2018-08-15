@@ -47,7 +47,7 @@ attr_accessor :id, :name, :grade
 
   def update
     def update
-    sql = "UPDATE songs SET name = ?, grade = ? WHERE id = ?"
+    sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
     DB[:conn].execute(sql, self.name, self.album, self.id)
   end
   end
